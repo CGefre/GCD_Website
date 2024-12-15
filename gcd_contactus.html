@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gefre Custom Designs | Contact Us </title>
+    <link href="gcd_reset.css" rel="stylesheet" />
+    <link href="gcd_style.css" rel="stylesheet" />
+    <link href="gcd_forms.css" rel="stylesheet" />
+    <link href="gcd_table.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+       <img src="gcd_logo.png" alt="Gefre Custom Designs" id="logoimg" />
+       <nav> <a id="navicon"><img src="rb_navicon2.png" alt="" /></a>
+          <ul>
+             <li><a href="gcd_homepage.html">Home</a></li>
+             <li><a href="gcd_aboutus.html">About Us</a></li>
+             <li><a href="gcd_capability.html">Capability</a></li>
+             <li><a href="gcd_faq.html">FAQ</a></li>
+             <li><a href="gcd_testimonial.html">Testimonial</a></li>
+             <li><a href="gcd_contactus.html">Contact Us</a></li>
+          </ul>
+       </nav>
+    </header>
+    <section id="quote"> 
+        <h1>Request a Quote:</h1>
+        <form id="request" action="http://www.example.com/gcd/survey" method="post">
+            <fieldset id="custInfo">
+                <legend>Customer Information</legend>
+                <div class="formRow">
+                    <label for="name">Name*</label>
+                    <input name="custName" id="name" type="text" placeholder="first and last name" required />
+                </div>
+                    
+                <div class="formRow">
+                    <label for="street">Street address</label>
+                    <input name="custStreet" id="street" type="text" />
+                </div>			
+                
+                <div class="formRow">	
+                    <label for="city">City</label>
+                    <input name="custCity" id="city" type="text" />
+                </div>
+                    
+                <div class="formRow">	
+                    <label for="state">State</label>
+                    <input name="custState" id="state" type="text" />
+                </div>
+                
+                <div class="formRow">
+                    <label for="zip">Postal code</label>
+                    <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$" />
+                </div>
+                    
+                <div class="formRow">	
+                    <label for="phone">Phone number</label>
+                    <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                </div>	
+                    
+                <div class="formRow">	
+                    <label for="mail">E-mail*</label>
+                    <input name="custEmail" id="mail" type="email" required />
+                </div>
+                <br>  
+                <fieldset id="pjInfo">
+                    <legend>Project Information</legend>
+                    <label for="pjBox">Breif description about your project: </label>
+                    <textarea name="pjRequest" id="pjBox"></textarea>
+                            
+                </fieldset>
+            </fieldset>
+            <div id="buttons">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Cancel" />
+            </div>
+        </form>
+    </section>
+    <section id="location">
+        <h1>We are located at:</h1>
+        <h2>111 N Walnut Ave, Owatonna, MN 55060</h2>
+            <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865.944691214047!2d-93.23475140838559!3d44.084495796529616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f6e7690bcc2c1f%3A0x4bb456994a8cc2!2sMineral%20Springs%20Brewery!5e0!3m2!1sen!2sus!4v1733443451266!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+    <section id="hours">
+        <h1>Busniess Hours:</h1>
+        <table>
+            <tr>
+                <th></th>
+                <th>Office Hours</th>
+                <th>Shop Hours</th>
+            </tr>
+            <tr>
+                <td class="highlight"><b>Monday</b></td>
+                <td>8:00AM - 5:00PM</td>
+                <td>5:00AM - 8:00pm</td>
+            </tr>
+            <tr>
+                <td class="highlight"><b>Tuesday</b></td>
+                <td class="banded">8:00AM - 5:00PM</td>
+                <td class="banded">5:00AM - 8:00pm</td>
+            </tr>
+            <tr>
+                <td class="highlight"><b>Wednesday</b></td>
+                <td>8:00AM - 5:00PM</td>
+                <td>5:00AM - 8:00pm</td>
+            </tr>
+            <tr>
+                <td class="highlight"><b>Thursday</b></td>
+                <td class="banded">8:00AM - 5:00PM</td>
+                <td class="banded">5:00AM - 8:00pm</td>
+            </tr>
+            <tr>
+                <td class="highlight"><b>Friday</b></td>
+                <td>8:00AM - 5:00PM</td>
+                <td>5:00AM - 8:00pm</td>
+            <tr>
+                <td class="highlight"><b>Saturday</b></td>
+                <td class="banded">10:00AM - 2:00PM</td>
+                <td class="banded"><b>Closed</b></td>
+            </tr>
+            <tr>
+                <td class="highlight"><b>Sunday</b></td>
+                <td colspan="2"><b>Closed</b></td>
+            </tr>   
+        </table>
+    </section>
+    <footer>
+        <p>Gefre Custom Designs &#8226; 111 N Walnut Ave, Owatonna, MN 55060 &#8226; <a href="tel:+15074136281">(507) 413-6281</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/* HTML and Body styles */
+
+html {
+   background: rgb(0, 47, 175) ;
+   background-image: url(background.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color: white;
+   box-shadow: rgb(51, 51, 51) 20px 0px 40px,  rgb(51, 51, 51) -20px 0px 40px,
+               inset rgb(51, 21, 21) 0px 0px 40px;
+   border-left: 3px solid rgb(51, 51, 51);
+   border-right: 3px solid rgb(51, 51, 51);
+   min-height: 100%;  
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1020px;  
+   width: 100%;
+}
+
+
+/* Header styles */
+
+header img#logoimg {
+   width: 100%;
+   height: 200px;
+}
+
+header {
+   background: linear-gradient(to bottom, black 90%, rgb(20, 102, 179));
+   border-bottom: 1px solid rgb(0, 0, 0);
+   color: white;
+}
+
+/* Navigation list styles */
+
+header nav ul li {
+   font-size: 1.2em; 
+   line-height: 2.3em; 
+   height: 2.3em;
+   padding: 0px 10px;
+}
+
+header nav ul li a {
+   color: white;
+   display: block;
+   width: 100%;
+}
+
+header nav ul li a:hover {
+   color: rgb(179, 20, 25);
+}
+
+a#navicon {
+   display: none;
+}
+
+/* Section styles */
+
+section {
+   margin: 30px 3%;
+}
+
+section img {
+     display: block;
+     margin: 5% auto;
+}
+
+div#map {
+   display: flex;
+   border: 2px solid black;
+   justify-content: center;
+   align-items: center;
+}
+
+section h1 {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+   font-size: 2.5em;
+   color: rgb(179, 20, 25);
+   text-align: center;
+   margin-bottom: 35px;
+}
+
+section h2 {
+   text-align: center;
+   margin-bottom: 35px;
+}
+
+section p {
+   line-height: 1.4em;
+   margin: 15px 0px;
+}
+
+p {
+   text-align: center;
+   text-indent: 2em;
+}   
+
+section ul, ol {
+   padding: 20px 60px;
+}
+
+ul.list li {
+   margin-bottom: 30px;
+}
+
+ul.nobullets {
+   list-style: none;
+   text-align: center;
+}
+
+ul.nobullets li {
+   margin-top: 25px;
+}
+
+ul.nobullets img {
+   border-radius: 50%;
+   margin-bottom: 8px;
+   border: 6px double black; 
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */   
+
+footer {
+   background: linear-gradient(to top, black 30%, rgb(20, 102, 179));
+   border-top: 1px solid rgb(0, 0, 0);
+   color: white;
+   text-align: center;
+   width: 100%;
+}
+
+footer p {
+   margin: 20px 20px;
+}
+
+footer a {
+   color: white;
+}
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+
+   a#navicon {
+      display: block;
+   }
+   
+
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      height: 1.2em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+   
+   section img, section.nobullets img {
+      width: 100%;
+      height: auto;
+   }
+
+   section h1 {
+      font-size: 1.5em;
+   }
+   
+   section p {
+      font-size: 0.8em;
+      text-align: center;
+      margin: auto;
+   }
+
+   section ul {
+      padding: 10%;
+   }
+
+   section li {
+      font-size: 0.8em;
+   }
+}
+
+footer {
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+   body header nav ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+   }
+   
+   body  header nav ul li {
+      flex: 0 1 auto;
+   }
+}
